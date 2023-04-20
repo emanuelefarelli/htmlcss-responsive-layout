@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    border-radius: 0;
+    border: none;
+}
+
 /* GENERAL */
 
 .flex{
@@ -22,5 +35,104 @@
     height: 100%;
 }
 
+.w-100{
+    width: 100%;
+}
+
+.s-txt{
+    font-size: 0.8rem;
+}
+
+.m-txt{
+    font-size: 1rem;
+}
+
+.l-txt{
+    font-size: 2rem;
+}
+
+.bt-white{
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: black;
+    background-color: white;
+}
+
+.bt-purple{
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: #9792e4;
+}
+
+.deep-blue{
+ color: #0084fd;
+}
+
+.light-blue{
+ color: #9792e4;
+}
+
+.purple{
+    color: #9792e4;
+}
+
+.yellow{
+    color: #fdc15f;
+}
+
+.white{
+    color: white;
+}
+
+
 /* HEADER */
 
+header{
+    height: 5rem;
+    background-color: #0084fd;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header i{
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+header img{
+    padding: 1.1rem;
+}
+
+header ul{
+    align-items: center;
+}
+
+header li{
+    padding-left: 1rem;
+}
+
+header li a{
+    color: white;
+    text-decoration: none;
+}
+
+header nav.nav-desktop{
+    display: none;
+    margin-right: 1rem;
+}
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+    header nav.nav-mobile{   
+        display: none;
+    }
+
+    header nav.nav-desktop{
+        display: block;
+    }
+}
