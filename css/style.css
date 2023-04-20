@@ -153,6 +153,8 @@ section.cards div.card i{
 section.cards div.big-card{
     padding-bottom: 0;
     text-align: left;
+    /* position: relative;
+    height: 70vh; */
 }
 
 section.cards div.big-card i{
@@ -178,11 +180,28 @@ section.cards p{
 
 section.cards img{
     width: 100%;
-    position: relative;
-    top: 10px;
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+
 }
 
 /* RESPONSIVE */
+
+@media screen and (min-width: 480px) {
+    section.cards div.card{
+        width: calc((100% / 3) - 2rem);
+    }
+
+    section.cards div.big-card{
+        width: calc(((100% / 3) * 2) - 2rem);
+    }
+
+    section.cards img{
+        width: 50%;
+        display: block;
+    }
+}
 
 @media screen and (min-width: 768px) {
     header nav.nav-mobile{   
@@ -191,5 +210,23 @@ section.cards img{
 
     header nav.nav-desktop{
         display: block;
+    }  
+
+    section.cards div.container{
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    section.cards div.big-card{
+        display: flex; 
+    }
+
+    section.cards div.desktop-container{
+        width: 50%;
+    }
+
+    section.cards img{
+        width: 50%;
+        display: inline-block;
     }
 }
