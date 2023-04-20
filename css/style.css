@@ -130,7 +130,9 @@ header nav.nav-desktop{
     margin-right: 1rem;
 }
 
+
 /* CARDS */
+
 
 section.cards div.container{
     margin: 1rem;
@@ -186,6 +188,57 @@ section.cards img{
 
 }
 
+
+/* INFO */
+
+section.info{
+    background-color: #9792e4;
+}
+
+section.info>div{
+    flex-direction: column;
+}
+
+section.info div.left,
+section.info div.right{
+    width: 100%;
+    padding: 2rem;
+}
+
+section.info img{
+    width: 100%;
+}
+
+section.info div.left h2,
+section.info div.left p,
+section.info div.left img{
+    margin: 2.5rem 0;
+}
+
+section.info div.right h2,
+section.info div.right p,
+section.info div.right img{
+    margin: 1rem 0;
+}
+
+section.info div.right div.container{
+    background-color: white;
+    color: black;
+    border-radius: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+section.info div.right p{
+    font-style: italic;
+}
+
+section.info button{
+    color: black;
+    padding: 16px 20px;
+    border-radius: 50%;
+}
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 480px) {
@@ -229,4 +282,19 @@ section.cards img{
         width: 50%;
         display: inline-block;
     }
+
+    section.info>div{
+        flex-direction: row;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    section.info div.right img{
+        width: 60%;
+    }
+
+    section.info div.right div.container{
+        margin-top: 50%;
+    }
+
 }
