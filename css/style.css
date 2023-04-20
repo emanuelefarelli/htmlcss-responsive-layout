@@ -6,6 +6,7 @@
 
 body{
     font-family: sans-serif;
+    line-height: 1.7rem;
 }
 
 ul{
@@ -40,11 +41,11 @@ button{
 }
 
 .s-txt{
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .m-txt{
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .l-txt{
@@ -65,12 +66,19 @@ button{
     background-color: #9792e4;
 }
 
+.bt-blue{
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: #0084fd;
+}
+
 .deep-blue{
  color: #0084fd;
 }
 
 .light-blue{
- color: #9792e4;
+ color: #b5ddff;
 }
 
 .purple{
@@ -122,8 +130,57 @@ header nav.nav-desktop{
     margin-right: 1rem;
 }
 
+/* CARDS */
+
+section.cards div.container{
+    margin: 1rem;
+}
 
 
+section.cards div.card{
+    background-color: #b5ddff;
+    /* width: 100%; */
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+section.cards div.card i{
+    font-size: 5rem;
+}
+
+section.cards div.big-card{
+    padding-bottom: 0;
+    text-align: left;
+}
+
+section.cards div.big-card i{
+    font-size: 1rem;
+}
+
+section.cards div.big-card button{
+    padding: 0.6rem 3rem;
+    border-radius: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+section.cards div.big-card button,
+section.cards div.card h2,
+section.cards div.card p{
+    margin: 1.3rem 0;
+}
+
+section.cards p{
+    font-weight: 600;
+    color: rgb(107, 107, 107);
+}
+
+section.cards img{
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
 
 /* RESPONSIVE */
 
