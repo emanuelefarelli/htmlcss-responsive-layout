@@ -45,7 +45,7 @@ button{
 }
 
 .xs-txt{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
 .s-txt{
@@ -390,6 +390,25 @@ section.get-started button{
     margin-bottom: 2rem;
 }
 
+/* FOOTER */
+
+footer{
+    background-color: #333333;
+    text-align: center;
+}
+
+footer div{
+    max-width: 500px;
+    padding: 2rem;
+}
+
+footer div p:first-child{
+    margin-bottom: 3rem;
+}
+
+footer a{
+    color: #9792e4;
+}
 
 /* RESPONSIVE */
 
@@ -463,6 +482,12 @@ section.get-started button{
 
     section.about-us div.txt h1{
         font-size: 3rem;
+    }
+
+    /* GET-STARTED */
+
+    section.get-started{
+        padding: 2rem 15%;
     }
 }
 
@@ -553,5 +578,11 @@ section.get-started button{
     section.about-us div.txt{
         padding: 0 2.5rem;
         padding-right: 4rem;
+    }
+
+    /* GET-STARTED */
+
+    section.get-started{
+        padding: 2rem 35%;
     }
 }
