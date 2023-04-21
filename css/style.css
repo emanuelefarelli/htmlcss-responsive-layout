@@ -44,6 +44,10 @@ button{
     text-align: center;
 }
 
+.xs-txt{
+    font-size: 0.7rem;
+}
+
 .s-txt{
     font-size: 1rem;
 }
@@ -53,11 +57,15 @@ button{
 }
 
 .l-txt{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .xl-txt{
     font-size: 2.5rem;
+}
+
+.xxl-txt{
+    font-size: 4rem;
 }
 
 .bt-white{
@@ -286,6 +294,7 @@ section.testimonials img{
 
 section.why-us{
     background-color: #9792e4;
+    padding-bottom: 2rem;
 }
 
 section.why-us>h1{
@@ -316,6 +325,71 @@ section.why-us div.pov button{
     font-weight: 800;
     letter-spacing: 0.3rem;
 }
+
+/* ABOUT US */
+
+section.about-us{
+    flex-direction: column;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    width: 90%;
+}
+
+section.about-us div.txt h1{
+    padding: 2rem 0;
+}
+
+section.about-us img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+section.about-us div.img{
+    margin-top: 2.5rem;    
+}
+
+section.about-us div.img-decoration{
+    position: relative;
+    width: 50%;
+}
+
+section.about-us div.img-decoration,
+section.about-us img{
+    max-width: 200px;
+}
+
+section.about-us div.img-decoration>div{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+section.about-us div.img h2{
+    padding: 1rem 0;
+}
+
+/* GET-STARTED */
+
+section.get-started{
+    text-align: center;
+    background-color: #9792e4;
+    padding: 2rem 1.5rem;
+}
+
+section.get-started>*{
+    padding-bottom: 2rem;
+}
+
+section.get-started h2{
+    line-height: 2.5rem;
+}
+
+section.get-started button{
+    padding: 1rem 4rem;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+}
+
 
 /* RESPONSIVE */
 
@@ -364,6 +438,31 @@ section.why-us div.pov button{
     section.why-us div.pov{
         width: calc(50% - 2rem);
         margin: 1rem;
+    }
+
+    /* ABOUT-US */
+
+    section.about-us{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section.about-us div.txt,
+    section.about-us div.img{
+        width: 40vw;
+    }
+
+    section.about-us div.img{
+        padding: 0 2rem;
+    }
+
+    section.about-us div.img-decoration,
+    section.about-us img{
+        width: 100%;
+    }
+
+    section.about-us div.txt h1{
+        font-size: 3rem;
     }
 }
 
@@ -438,4 +537,21 @@ section.why-us div.pov button{
    section.why-us div.pov-container{
         width: 60%;
    }
+
+   /* ABOUT-US */
+
+   section.about-us{
+        width: 60%;
+        margin: 4rem auto;
+    }
+
+    section.about-us div.img{
+        width: 30% ;
+        padding-right: 3rem;
+    }
+
+    section.about-us div.txt{
+        padding: 0 2.5rem;
+        padding-right: 4rem;
+    }
 }
