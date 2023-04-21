@@ -6,7 +6,7 @@
 
 body{
     font-family: sans-serif;
-    line-height: 1.7rem;
+    line-height: 1.9rem;
 }
 
 ul{
@@ -141,7 +141,6 @@ section.cards div.container{
 
 section.cards div.card{
     background-color: #b5ddff;
-    /* width: 100%; */
     border-radius: 1rem;
     padding: 1.5rem;
     margin: 1rem;
@@ -155,8 +154,6 @@ section.cards div.card i{
 section.cards div.big-card{
     padding-bottom: 0;
     text-align: left;
-    /* position: relative;
-    height: 70vh; */
 }
 
 section.cards div.big-card i{
@@ -180,12 +177,16 @@ section.cards p{
     color: rgb(107, 107, 107);
 }
 
+section.cards div.img-cont{
+    position: relative;
+    width: 100%;
+    height: 37vh;
+}
+
 section.cards img{
     width: 100%;
-    /* position: absolute;
+    position: absolute;
     bottom: 0;
-    left: 0; */
-
 }
 
 
@@ -239,9 +240,43 @@ section.info button{
     border-radius: 50%;
 }
 
+/* TESTIMONIALS*/
+
+section.testimonials{
+    text-align: center;
+    padding: 1rem 1.5rem;
+}
+
+section.testimonials p{
+    margin: 1rem 1rem;
+}
+
+section.testimonials>p{
+    margin: 1.5rem;
+}
+
+section.testimonials div.id{
+    margin: 2rem 1rem;
+    background-color: #9792e4;
+    border-radius: 2.5rem;
+    padding: 1.5rem 0;
+}
+
+section.testimonials img{
+
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    
+}
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 480px) {
+
+    /* CARDS */
+    
     section.cards div.card{
         width: calc((100% / 3) - 2rem);
     }
@@ -251,12 +286,30 @@ section.info button{
     }
 
     section.cards img{
-        width: 50%;
+        width: 70%;
         display: block;
+    }
+
+    /* TESTIMONIALS */
+
+    section.testimonials div.id{
+        display: flex;
+    }
+
+    section.testimonials div.id-info{
+        text-align: left;
+    }
+
+    section.testimonials img{
+        margin-left: 1.5rem;
+        vertical-align: middle;
     }
 }
 
 @media screen and (min-width: 768px) {
+
+    /* HEADER */
+
     header nav.nav-mobile{   
         display: none;
     }
@@ -264,6 +317,8 @@ section.info button{
     header nav.nav-desktop{
         display: block;
     }  
+
+    /* CARDS */
 
     section.cards div.container{
         margin: 0 auto;
@@ -278,10 +333,15 @@ section.info button{
         width: 50%;
     }
 
-    section.cards img{
-        width: 50%;
-        display: inline-block;
+    section.cards div.img-cont{
+        height: 100%;
     }
+
+    section.cards img{
+        width: 70%;
+    }
+
+    /* INFO */
 
     section.info>div{
         flex-direction: row;
@@ -296,5 +356,17 @@ section.info button{
     section.info div.right div.container{
         margin-top: 50%;
     }
+
+    /* TESTIMONIALS */
+
+   section.testimonials div.id,
+   section.testimonials>p{
+    width: 60%;
+    margin: 2rem auto;
+   } 
+
+   section.testimonials div.id-info>p{
+    margin: 1rem 3rem;
+   }
 
 }
