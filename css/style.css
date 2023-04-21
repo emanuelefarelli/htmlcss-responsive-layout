@@ -40,6 +40,10 @@ button{
     width: 100%;
 }
 
+.center-txt{
+    text-align: center;
+}
+
 .s-txt{
     font-size: 1rem;
 }
@@ -50,6 +54,10 @@ button{
 
 .l-txt{
     font-size: 2rem;
+}
+
+.xl-txt{
+    font-size: 2.5rem;
 }
 
 .bt-white{
@@ -91,6 +99,10 @@ button{
 
 .white{
     color: white;
+}
+
+.grey{
+    color: rgb(107, 107, 107);
 }
 
 
@@ -174,7 +186,6 @@ section.cards div.card p{
 
 section.cards p{
     font-weight: 600;
-    color: rgb(107, 107, 107);
 }
 
 section.cards div.img-cont{
@@ -271,6 +282,41 @@ section.testimonials img{
     
 }
 
+/* WHY-US */
+
+section.why-us{
+    background-color: #9792e4;
+}
+
+section.why-us>h1{
+    width: 90%;
+    margin: 4rem auto;
+    padding-top: 4rem;
+    line-height: 1.5;
+}
+
+section.why-us div.pov{
+    background-color: white;
+    border-radius: 1rem;
+    margin: 2rem 2rem;
+    padding: 0 2rem;
+}
+
+section.why-us div.pov>h1{
+    padding: 2rem 0;
+}
+
+section.why-us div.pov>p{
+    padding: 1.5rem 0;
+}
+
+section.why-us div.pov button{
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 2.5rem;
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+}
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 480px) {
@@ -303,6 +349,21 @@ section.testimonials img{
     section.testimonials img{
         margin-left: 1.5rem;
         vertical-align: middle;
+    }
+
+    /* WHY-US */
+
+    section.why-us div.pov-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    section.why-us div.pov{
+        width: calc(50% - 2rem);
+        margin: 1rem;
     }
 }
 
@@ -361,12 +422,20 @@ section.testimonials img{
 
    section.testimonials div.id,
    section.testimonials>p{
-    width: 60%;
-    margin: 2rem auto;
+        width: 60%;
+        margin: 2rem auto;
    } 
 
    section.testimonials div.id-info>p{
-    margin: 1rem 3rem;
+        margin: 1rem 3rem;
    }
 
+   /* WHY-US */
+
+   section.why-us div.pov{
+        width: calc((100% / 3) - 3rem);
+   }
+   section.why-us div.pov-container{
+        width: 60%;
+   }
 }
