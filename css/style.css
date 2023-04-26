@@ -199,11 +199,11 @@ section.cards p{
 section.cards div.img-cont{
     width: 100%;
     height: 37vh;
-    align-items: flex-end;
 }
 
 section.cards img{
     width: 100%;
+    align-self: flex-end;
 }
 
 
